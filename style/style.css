@@ -165,34 +165,65 @@ h5 {
 
 .info {
     height: 500px;
-    width:calc(33.3% - 30px);
-    margin: 0 15px;
+    width:calc(33.3% - 40px);
+    margin: 0 20px;
     background-color: purple;
     float: left;
 }
 
 .info-2 {
     height: 500px;
-    width: calc(50% - 30px);
-    margin: 0 15px;
+    width: calc(50% - 40px);
+    margin: 0 20px;
     background-color: purple;
     float: left;
 }
 
 
 footer {
-    height: 200px;
+    height: 180px;
+    line-height: 40px;
+    vertical-align: middle;
     margin-top: 55px;
-    padding-top: 40px;
+    padding-top: 30px;
+    position: relative;
+    background-color: #D3D3D3;
+}
+
+footer .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer h2 {
     display: inline-block;
     width: 33%;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .nav-footer {
     display: inline-block;
     text-align: right;
     width: 66%;
+}
+
+.no-uppercase li {
+    margin-right: 20px;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #949494;
+    font-weight: 500;
+}
+
+#space {
+    padding-left: 30px;
+}
+
+#underscore {
+    border-bottom: 2px solid #949494;
+    padding: 0;
 }
