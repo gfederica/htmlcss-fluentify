@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* commons */
 body  {
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -14,7 +15,7 @@ header {
     background-size: 75% auto;
     background-repeat: no-repeat;
     background-position: 114% 108%;
-    height: 90vh;
+    height: 85vh;
 }
 .container {
     width: 85%;
@@ -24,6 +25,14 @@ header {
 .half-width {
     width: 50%;
 }
+
+/* clearfix */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 
 /* header */
@@ -44,14 +53,6 @@ header {
 .logo img {
     vertical-align: middle;
 }
-
-
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 
 ul li {
     display: inline-block;
@@ -107,9 +108,9 @@ a:not(.btn):hover {
     color: #89c90c;
 }
 
-
+/* jumbotron */
 .jumbotron {
-    height: 540px;
+    height: 500px;
     position: relative;
 }
 .jumbotron-middle {
@@ -125,3 +126,61 @@ h1 {
     margin-bottom: 40px;
     letter-spacing: 1px;
 }
+
+
+/* first section, grey  */
+.grey {
+    background-color: #D3D3D3;
+    height: 140px;
+    position: relative;
+}
+.grey-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    text-align:center;
+}
+
+h3 {
+    font-size: 26px;
+}
+h5 {
+    font-size: 18px;
+    color: #949494;
+    font-weight: 500;
+}
+
+
+/* second section, white : composta da due parti suddivise da un hr */
+.white {
+    height: 1000px;
+}
+
+.three-col,
+.two-col {
+    margin: 25px 0;
+}
+
+.info {
+    height: 500px;
+    width:calc(33.3% - 30px);
+    margin: 0 15px;
+    background-color: purple;
+    float: left;
+}
+
+.info-2 {
+    height: 500px;
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    background-color: purple;
+    float: left;
+}
+
+
+footer {
+    height: 300px;
+}
+
