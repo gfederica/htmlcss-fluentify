@@ -181,6 +181,18 @@ h5 {
 
 
 footer {
-    height: 300px;
+    height: 200px;
+    margin-top: 55px;
+    padding-top: 40px;
 }
 
+footer h2 {
+    display: inline-block;
+    width: 33%;
+}
+
+.nav-footer {
+    display: inline-block;
+    text-align: right;
+    width: 66%;
+}
