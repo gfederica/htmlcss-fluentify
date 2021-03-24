@@ -14,23 +14,37 @@ header {
     background-size: 75% auto;
     background-repeat: no-repeat;
     background-position: 114% 108%;
+    height: 90vh;
 }
 .container {
     width: 85%;
     margin:auto;
-    padding-top: 20px;
-    height: 10vh;
 }
+
+.half-width {
+    width: 50%;
+}
+
+
+/* header */
+.nav {
+    height: 80px;
+    line-height: 80px;
+}
+
 .logo, 
 .menu-left,
 .menu-right {
     float: left;
 }
-
 .logo {
     width: 14%;
-    height: 100%;
+    
 }
+.logo img {
+    vertical-align: middle;
+}
+
 
 .container::after {
     content: "";
@@ -44,23 +58,19 @@ ul li {
     list-style: none;
     text-transform: uppercase;
     font-size: 14px;
-    height: 40px;
-    line-height: 40px;
     padding:0 6px;
 }
 
 .menu-left {
     text-align: left;
     width: 46%;
-    height: 100%;
 }
 .menu-right {
     text-align: right;
     width: 40%;
-    height: 100%;
 }
 
-li a {
+.container a {
     text-decoration: none;
     color: white;
 }
@@ -68,32 +78,50 @@ a:not(.btn):hover {
     cursor: pointer;
     color: #89c90c;
 }
+
+/* buttons */
 .btn {
+   width: 100%;
    padding: 8px 18px; 
    border-radius: 5px;
+   text-transform: uppercase;
 }
-
+.btn-large {
+    padding:20px;
+    font-size: 16px;
+}
 .blue-btn {
     border: 1px solid white;
     background-color: #0C325A;
 }
-
 .green-btn {
     border: 1px solid #89c90c;
     background-color: #89c90c;
 }
-
 .blue-btn:hover {
     background-color: white;
     color: #89c90c;
 }
-
 .green-btn:hover {
     background-color: white;
     color: #89c90c;
 }
 
-.jumbotron {
-    height: 80vh;
 
+.jumbotron {
+    height: 540px;
+    position: relative;
+}
+.jumbotron-middle {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+h1 {
+    color: white;
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
 }
