@@ -39,6 +39,12 @@ hr {
     color: #949494;
 }
 
+.grey-font-properties {
+    font-size: 18px;
+    color: #949494;
+    font-weight: 500;
+}
+
 
 
 /* header */
@@ -46,7 +52,6 @@ hr {
     height: 80px;
     line-height: 80px;
 }
-
 .logo, 
 .menu-left,
 .menu-right {
@@ -81,7 +86,7 @@ ul li {
     text-decoration: none;
     color: white;
 }
-a:not(.btn):hover {
+a:not(.btn, #blue-link ):hover {
     cursor: pointer;
     color: #89c90c;
 }
@@ -152,16 +157,11 @@ h1 {
 h3 {
     font-size: 26px;
 }
-h5 {
-    font-size: 18px;
-    color: #949494;
-    font-weight: 500;
-}
 
 
 /* second section, white : composta da due parti suddivise da un hr */
 .white {
-    height: 1000px;
+    height: 960px;
 }
 
 .three-col,
@@ -170,28 +170,74 @@ h5 {
 }
 
 .info {
-    height: 500px;
+    height: 480px;
     width:calc(33.3% - 40px);
     margin: 0 20px;
-    background-color: purple;
     float: left;
+    text-align: center;
+    position: relative;
+}
+.info img {
+    max-height: 160px;
+}
+.vertical-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info hr {
+    width: 30%;
+}
+.info h2,
+.info p {
+    padding: 20px 0;
 }
 
-.info-2 {
-    height: 500px;
-    width: calc(50% - 40px);
-    margin: 0 20px;
-    background-color: purple;
-    float: left;
+.info h2 {
+    color: #89c90c;
 }
+
+
+/* third section, due colonne  */
+.info-2 {
+    height: 480px;
+    width: calc(50% - 50px);
+    margin: 0 25px;
+    float: left;
+    padding: 10px;
+}
+.content-4 img {
+    width: 100%;
+    max-height: 400px;
+}
+.info-2 h2 {
+    font-size: 32px;
+    width: 80%;
+}
+.info-2 h2,
+.info-2 p{
+    padding-top: 20px;
+}
+
+#blue-link {
+    display: inline-block;
+    color: #4271A2;
+    padding-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#blue-link:hover {
+    color: #89c90c;
+}
+
 
 
 /* footer */
 footer {
-    height: 180px;
+    height: 150px;
     line-height: 40px;
     vertical-align: middle;
-    margin-top: 55px;
     padding-top: 30px;
     position: relative;
     background-color: #D3D3D3;
