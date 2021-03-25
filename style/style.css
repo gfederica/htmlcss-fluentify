@@ -26,6 +26,19 @@ header {
     width: 50%;
 }
 
+.grey-font-properties {
+    font-size: 18px;
+    color: #949494;
+    font-weight: 500;
+}
+
+.info,
+.info-2 {
+    padding-top: 50px;
+}
+
+
+
 /* clearfix */
 .container::after {
     content: "";
@@ -33,18 +46,16 @@ header {
     clear: both;
 }
 
+
+/* hr */
 hr {
     width: 90%;
     margin: auto;
     color: #949494;
 }
-
-.grey-font-properties {
-    font-size: 18px;
-    color: #949494;
-    font-weight: 500;
+.info hr {
+    width: 30%;
 }
-
 
 
 /* header */
@@ -139,13 +150,13 @@ h1 {
 }
 
 
-/* first section, grey  */
-.grey {
+/* intermezzo grigio  */
+.intermezzo {
     background-color: #D3D3D3;
     height: 140px;
     position: relative;
 }
-.grey-text {
+.testo-intermezzo {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -159,16 +170,7 @@ h3 {
 }
 
 
-/* second section, white : composta da due parti suddivise da un hr */
-.white {
-    height: 960px;
-}
-
-.three-col,
-.two-col {
-    margin: 25px 0;
-}
-
+/* sezione infografica da 3 colonne */
 .info {
     height: 480px;
     width:calc(33.3% - 40px);
@@ -178,35 +180,28 @@ h3 {
     position: relative;
 }
 .info img {
-    max-height: 160px;
-}
-.vertical-align {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.info hr {
-    width: 30%;
+    height: 160px;
 }
 .info h2,
 .info p {
     padding: 20px 0;
-}
 
+}
 .info h2 {
     color: #89c90c;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 
-/* third section, due colonne  */
+/* sezione infografica da due colonne  */
 .info-2 {
     height: 480px;
     width: calc(50% - 50px);
     margin: 0 25px;
     float: left;
-    padding: 10px;
 }
-.content-4 img {
+#montagna {
     width: 100%;
     max-height: 400px;
 }
@@ -226,7 +221,6 @@ h3 {
     text-decoration: underline;
     cursor: pointer;
 }
-
 #blue-link:hover {
     color: #89c90c;
 }
@@ -263,7 +257,7 @@ footer h2 {
     width: 66%;
 }
 
-.no-uppercase li p {
+#no-uppercase:not(a) {
     margin-right: 20px;
     text-transform: none;
     font-weight: bold;
@@ -271,19 +265,17 @@ footer h2 {
     color: #949494;
     font-weight: 500;
 }
-
 #space {
     padding-left: 30px;
 }
-
 #underscore {
     border-bottom: 2px solid #949494;
     padding: 0;
 }
 
-/* fixed bottom help button */
 
-.fixed {
+/* pulsante help fixed */
+#help {
     position: fixed;
     left: 82%;
     bottom: 0;
